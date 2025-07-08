@@ -1,0 +1,28 @@
+[package]
+name = "basic-rag"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.98"
+clap = { version = "4.5.40", features = ["derive", "env"] }
+dotenv = "0.15.0"
+env_logger = "0.11.8"
+git2 = "0.20.2"
+log = "0.4.27"
+openai = "1.1.1"
+reqwest = "0.12.22"
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.140"
+tantivy = "0.24.1"
+tokio = { version = "1.46.1", features = ["full"] }
+walkdir = "2.5.0"
+pulldown-cmark = "0.9"
+scraper = "0.18"
+regex = "1.10"
+sha2 = "0.10"
+
+[dev-dependencies]
+assert_cmd = "2.0"
+predicates = "3.0"
+tempfile = "3.8"
